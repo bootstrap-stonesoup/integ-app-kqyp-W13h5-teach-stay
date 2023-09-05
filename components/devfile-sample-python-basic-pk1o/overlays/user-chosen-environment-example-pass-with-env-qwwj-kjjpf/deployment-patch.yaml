@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-pk1o
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/bootstrap/integration-e2e-tenant/integ-app-kqyp/devfile-sample-python-basic-pk1o@sha256:4b8933b5347dcad09362da542d45a6a992f7834128e95ebed6515f55f06958fa
+        name: my-python
+        resources: {}
+status: {}
